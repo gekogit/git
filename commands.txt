@@ -1,7 +1,7 @@
 git status --oneline    nice view with only one line for each commit
 git branch              only info about branches
 git branch [name]       create new "name" branch
-git switch              change branch, go back with disconnected head, or fatch and link remote branch
+git switch              change branch, go back with disconnected head, or fetch and link remote branch
 ===============================
 stash                   save (on stack) the current work to skip to another branch or commit
 stash pop               restore and delete from memory
@@ -20,6 +20,11 @@ revert [hash]           rollback to the commit(hash) but leave a sign of that (c
 ===================================================================
 push [to][source]
 push -u [to][source]    link branches after first time, then works simply git push
-clone                   clone only default branch
+clone                   clone only default branch, create folder locally (ripo name)
 branch -r               show remote branches
-switch [remote branch]  fatch and link with remote
+switch [remote branch]  fetch and link with remote
+======================================================
+fetch                   default origin, take update of origin but not integrate with workspace
+fetch  [remote][branch] do on specific branch
+pull                    PWD where I am IS IMPORTANT - update local repo and working directory = fetch + merge, default from origin and my current branch
+pull [from][branch]     pull to where I am

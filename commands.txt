@@ -1,0 +1,25 @@
+git status --oneline    nice view with only one line for each commit
+git branch              only info about branches
+git branch [name]       create new "name" branch
+git switch              change branch, go back with disconnected head, or fatch and link remote branch
+===============================
+stash                   save (on stack) the current work to skip to another branch or commit
+stash pop               restore and delete from memory
+stash apply             restore and NOT delete from memory
+====================================================
+checkout [commit hash]  jump to have a look
+switch master           head to the master
+checkout HEAD~1         detached (move pointer)head to one commit back
+checkout HEAD           go to the last commit
+restore                 -||-
+restore --source [hash or HEAD~1] [file]  
+restore --staged        rollback add
+reset [hash]            del history-commits but not data
+reset --hard [hash]     del commits and data
+revert [hash]           rollback to the commit(hash) but leave a sign of that (commit)
+===================================================================
+push [to][source]
+push -u [to][source]    link branches after first time, then works simply git push
+clone                   clone only default branch
+branch -r               show remote branches
+switch [remote branch]  fatch and link with remote
